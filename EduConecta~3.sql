@@ -1,0 +1,10 @@
+CREATE OR REPLACE TYPE BODY TIPO_ESTUDIANTE AS
+
+    MAP MEMBER FUNCTION obtener_ida
+    RETURN NUMBER IS
+    BEGIN
+        RETURN SELF.id_estudiante;
+    END;
+
+END;
+/
